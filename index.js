@@ -55,7 +55,7 @@ const questions = () => {
     .then((data) => {
       console.log(data);
 
-      fs.writeFile("README.md", JSON.stringify(data), (err) => {
+      fs.writeFile("README.md", generateREADME(data), (err) => {
         if (err) {
           console.log(err);
         } else {
