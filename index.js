@@ -43,7 +43,7 @@ const questions = () => {
         type: "rawlist",
         message: "Which license option do you want?",
         name: "license",
-        choices: ["license1", "license2", "license3"],
+        choices: ["Apache License 2.0", "Boost Software License 1.0" , "GNU GPL v3" , "MIT", "Mozilla Public License 2.0"],
       },
       {
         type: "input",
@@ -59,6 +59,7 @@ const questions = () => {
 
     .then((data) => {
       console.log(data);
+   
 
       fs.writeFile("README.md", generateREADME(data), (err) => {
         if (err) {
@@ -70,13 +71,15 @@ const questions = () => {
     });
 };
 
+
+module.exports = questions;
 questions()
 
 
 
 
-// // TODO: Create a function to initialize app
+// // // TODO: Create a function to initialize app
 // function init() {}
 
-// // Function call to initialize app
+// // // Function call to initialize app
 // init();
