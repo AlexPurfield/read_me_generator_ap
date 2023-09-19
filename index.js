@@ -4,7 +4,7 @@ const fs = require("fs");
 
 const generateREADME = require("./utils/generateMarkdown.js"); // need to require generateMarkdown js 
 
- // TODO: Create an array of questions for user input
+ // Create an array of questions for user input
 const questions = () => { 
   return inquirer
     .prompt([
@@ -13,6 +13,11 @@ const questions = () => {
         type: "input",
         message: "What is the name of your application?",
         name: "title",
+      },
+      {
+        type: "input",
+        message: "What is the description of your application?",
+        name: "description",
       },
       {
         type: "input",
@@ -27,7 +32,7 @@ const questions = () => {
       {
         type: "input",
         message: "What are the contribution guidelines for your application?",
-        name: "contibution",
+        name: "contribution",
       },
       {
         type: "input",
@@ -68,8 +73,7 @@ const questions = () => {
 questions()
 
 
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
+
 
 // // TODO: Create a function to initialize app
 // function init() {}
