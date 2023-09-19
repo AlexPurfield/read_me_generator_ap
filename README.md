@@ -1,1 +1,0 @@
-{"appName":"Bubbles","installation":"download the app","usage":"finds bubbles","contibution":"na","testInstructions":"na","licence":"license3","github":"alexpurfield","email":"alexpurfield"}
