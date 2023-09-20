@@ -43,7 +43,7 @@ const questions = () => {
         type: "rawlist",
         message: "Which license option do you want?",
         name: "license",
-        choices: ["Apache License 2.0", "Boost Software License 1.0" , "GNU GPL v3" , "MIT", "Mozilla Public License 2.0"],
+        choices: ["Apache", "Boost" , "GNUGLP" , "MIT", "Mozilla"],
       },
       {
         type: "input",
