@@ -61,7 +61,7 @@ const questions = () => {
       console.log(data);
    
 
-      fs.writeFile("README.md", generateREADME(data), (err) => {
+      fs.writeFile("SAMPLEREADME.md", generateREADME(data), (err) => {
         if (err) {
           console.log(err);
         } else {
