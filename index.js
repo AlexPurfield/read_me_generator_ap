@@ -1,4 +1,6 @@
-// TODO: Include packages needed for this application
+// Include packages needed for this application
+//Inquirer
+//file systems
 const inquirer = require("inquirer");
 const fs = require("fs");
 
@@ -60,7 +62,7 @@ const questions = () => {
     .then((data) => {
       console.log(data);
    
-
+//generate readme from input 
       fs.writeFile("SAMPLEREADME.md", generateREADME(data), (err) => {
         if (err) {
           console.log(err);
@@ -78,8 +80,4 @@ questions()
 
 
 
-// // // TODO: Create a function to initialize app
-// function init() {}
 
-// // // Function call to initialize app
-// init();
