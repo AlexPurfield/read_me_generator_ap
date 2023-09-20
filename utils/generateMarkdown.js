@@ -42,7 +42,7 @@ return licenseLink[license]
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  Badge should show up under here:
+  License Badge:
   ${renderLicenseBadge(data.license)}
   
 
